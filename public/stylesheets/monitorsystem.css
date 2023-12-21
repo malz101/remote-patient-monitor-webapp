@@ -1,0 +1,95 @@
+.content {
+    width: 75%;
+    margin: 0 auto;
+    background: white;
+    padding: 10px;
+}
+
+body {
+    font-family: Tahoma;
+    font-size: 15px;
+    margin: 8px;
+    background: #555;
+}
+
+.heading{
+    text-align: center;
+    color: blueviolet;
+    background-color: white;
+}
+
+hr{
+    background-color: rgba(21, 180, 21, 0.842);
+}
+
+
+.alertArea{
+    text-align: center;
+    color: rgb(226, 43, 43);
+}
+
+.tableButton{
+    text-align: center;
+}
+
+.tableSection{
+    display: none;
+}
+.tableTitle{
+    text-align: center;
+    color: rgb(43, 70, 226);
+}
+
+.table{
+    height: 90% !important;
+    width: 90% !important;
+    text-align: center;
+    border-collapse: collapse;
+    border-color: #d0d0ff;
+    border-style: solid;
+    border-width: 5px;
+    margin: 0 auto;
+}
+
+.tableVitals{
+    text-align: left;
+    margin-left: 10%; 
+}
+
+.label{
+    font-weight: bold;
+    text-align: left;
+}
+
+.vitals{
+    text-align: left;
+}
+
+.tableHeading{
+    border-bottom-width: 2px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    text-align: center;
+    padding-right: 10px;
+}
+
+.picTable{
+    border-spacing: 20px;
+}
+.pI{
+    border-collapse: collapse;
+}
+
+.pI,.pID{
+    border: 1px solid black;
+    padding: 5px
+}
+.problems{
+    margin-left: 2%;
+}
+.patientChart{
+    height: 90% !important;
+    width: 90% !important;
+    margin: auto;
+    font-size: 20px;
+}

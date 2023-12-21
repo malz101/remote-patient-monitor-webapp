@@ -1,0 +1,117 @@
+
+<!doctype html>
+<html lang="en">
+
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title><%=patientid%> | Patient Monitoring System</title>
+        <script type="text/javascript" src="javascripts/Chart.min.js"></script>
+		<link href="stylesheets/monitorsystem.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+        <section>
+            <div class="content">
+                <h1 class="heading" >
+                        PATIENT: <%=patientid%>
+                </h1>
+            </div>
+        </section>
+
+        <section>
+            <div class="content">
+                <h4 class="alertArea" id="errorArea">
+                </h4>
+            </div>
+        </section>
+
+        <section>
+            <div class="content">
+                <table class="tableVitals">
+                    <tr>
+                        <td class="label">Heart rate: </td>
+                        <td class="vitals" id="bpm"></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Temperature: </td>
+                        <td class="vitals" id="temp"></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Position on Bed: </td>
+                        <td class="vitals" id="pos"></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Accleration: </td>
+                        <td class="vitals" id="accl"></td>
+                    </tr>
+                </table>  
+                <br>
+                <br>
+            </div>
+        </section>
+
+        <section>
+            <div class="content">
+                <canvas id="bpmCanvas" class="patientChart"></canvas>
+                <br>
+                <br>
+            </div>
+    
+            <div class="content">
+                <canvas id="hrCanvas" class="patientChart"></canvas>
+                <br>
+                <br>
+            </div>
+    
+            <div class="content">
+                <canvas id="acclCanvas" class="patientChart"></canvas>
+                <br>
+                <br>
+            </div>   
+        </section>
+
+        <div class="content tableButton">
+            <button id="table-button" type="button">Show Table</button>
+        </div>
+        
+        <section id="tableSection" class="tableSection">
+            <div class="content">
+                <hr size="6">
+
+                <h3 class="tableTitle">
+                    TABLE SHOWING PATIENT'S VITALS
+                </h3>
+                <table id="patientTable" class="table">
+                    <thead>
+                        <tr class = "tableHeadings">
+                            <th class="tableHeading">ID #</th>  
+                            <th class="tableHeading">Heart Rate (bpm)</th>
+                            <th class="tableHeading">Temperature (°C)</th>
+                            <th class="tableHeading">Postition</th>
+                            <th class="tableHeading">Accleration (m/s)</th>
+                            <th class="tableHeading">Alert</th>
+                            <th class="tableHeading">Time</th>
+                            <th class="tableHeading">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+  
+        <script type="text/javascript" src="javascripts/appProject-min.js"></script>
+	</body>
+</html>

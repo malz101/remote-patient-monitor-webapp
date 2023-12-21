@@ -1,0 +1,27 @@
+{
+  "name": "webapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "chart.js": "^2.9.3",
+    "consolidate": "^0.15.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "mongodb": "^3.5.5",
+    "morgan": "~1.9.1",
+    "pusher": "^3.0.0",
+    "pusher-js": "^5.1.1",
+    "swig": "^1.4.2"
+  },
+  "description": "This is a webserver for a Remote Patient Monitoring system",
+  "main": "app.js",
+  "devDependencies": {},
+  "author": "Malik Edwards",
+  "license": "ISC"
+}
